@@ -1,0 +1,17 @@
+apns==2.0.1
+APScheduler==3.6.1
+certifi==2019.9.11
+chardet==3.0.4
+future==0.17.1
+idna==2.8
+ndscheduler==0.3.0
+python-dateutil==2.8.0
+python-dotenv==0.10.3
+pytz==2019.2
+requests==2.22.0
+scandir==1.10.0
+six==1.12.0
+SQLAlchemy==1.3.6
+tornado==5.1.1
+tzlocal==2.0.0
+urllib3==1.25.4

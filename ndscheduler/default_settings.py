@@ -15,10 +15,11 @@ DEBUG = True
 # Static Assets
 #
 # The web UI is a single page app. All javascripts/css files should be in STATIC_DIR_PATH
-#
+
 STATIC_DIR_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'static')
 TEMPLATE_DIR_PATH = STATIC_DIR_PATH
 APP_INDEX_PAGE = 'index.html'
+AUTH_PAGE = "auth.html"
 
 #
 # Server setup
@@ -94,3 +95,17 @@ logging.getLogger().setLevel(logging.INFO)
 
 # Packages that contains job classes, e.g., simple_scheduler.jobs
 JOB_CLASS_PACKAGES = []
+
+### CUSOTM STUFF defaults
+# AUTH STUFF
+COOKIE_SECRET="itytruyebhsjuitoyufpi" # TODO change this
+
+COOKIE_KEY_1 = "n346inrth7uiyoi7yniu7tU&^%eco7ywh48i7t5cb44"
+COOKIE_KEY_2 = "%&h^G54&URIyUTUyGERyRTYHUYUrepuioiuyoiruyil"
+COOKIE_KEY_3 = "&*Mhgnlkdvjfhk,djhfgvkijusrhtyikgvwuerpgpo0"
+COOKIE_TIMEOUT_SECONDS = 60*60
+STALE_COOKIE_TIMEOUT_SECONDS = 60*5
+ND_LOGON_TOKEN_NAME = "fdg3u4f9j87oti4jyidutyerukjty"
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+
+# ENV_PATH = os.path.join(BASE_DIR,".env")

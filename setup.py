@@ -62,10 +62,10 @@ classifiers = [s.strip() for s in classes.split('\n') if s]
 setup(
     name=PACKAGE,
     version=__version__,
-    description='ndscheduler: A cron-replacement library from Nextdoor',
+    description='Alex\'s terrible fork of \"ndscheduler: A cron-replacement library from Nextdoor\"',
     long_description=open('README.md').read(),
-    author='Nextdoor Engineering',
-    author_email='eng@nextdoor.com',
+    author='Alex Peterson',
+    author_email='#',
     url='https://github.com/Nextdoor/ndscheduler',
     download_url='http://pypi.python.org/pypi/ndscheduler#downloads',
     license='Apache License, Version 2',

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scheduler</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/vendor/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="static/css/vendor/bootstrap-switch.css" rel="stylesheet" type="text/css">
+    <link href="static/css/vendor/jquery.dataTables.css" rel="stylesheet" type="text/css">
+    <link href="static/css/vendor/select2.css" rel="stylesheet" type="text/css">
+    <link href="static/css/vendor/select2-bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="static/css/main.css" rel="stylesheet" type="text/css">
+
+    <script>
+        var DEFAULT_CACHE_BUSTER = (new Date()).getTime();
+        // DEFAULT_CACHE_BUSTER will be replaced with a release token by the
+        // build script. cacheBuster is used by requirejs.
+        cacheBuster = DEFAULT_CACHE_BUSTER;
+    </script>
+</head>
+<body class="bg-dark">
+    <form method="POST" action="/login/">
+        
+        <h1>Login</h1>
+        <small>who needs css anyways</small><br>
+        <label for="u">Username</label> <input type="text" name="u"><br>
+        <label for="p">Password</label> <input type="password" name="p"><br>
+        
+        <input type="submit" value="Login">
+
+    </form>    
+</body>
+
+</html>

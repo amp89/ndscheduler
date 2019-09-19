@@ -16,6 +16,7 @@ from ndscheduler.core import scheduler_manager
 from ndscheduler.server.handlers import audit_logs
 from ndscheduler.server.handlers import executions
 from ndscheduler.server.handlers import index
+from ndscheduler.server.handlers import auth
 from ndscheduler.server.handlers import jobs
 
 logger = logging.getLogger(__name__)
@@ -35,13 +36,19 @@ class SchedulerServer:
             debug=settings.DEBUG,
             static_path=settings.STATIC_DIR_PATH,
             template_path=settings.TEMPLATE_DIR_PATH,
-            scheduler_manager=self.scheduler_manager
+            scheduler_manager=self.scheduler_manager,
+            cookie_secret=settings.COOKIE_SECRET,
         )
 
         # Setup server
+        # TODO i think this is where I need to add in auth page
         URLS = [
             # Index page
             (r'/', index.Handler),
+
+            # Login
+            (r'/login/', auth.LoginHandler),
+            (r'/logout/', auth.LogoutHandler),
 
             # APIs
             (r'/api/%s/jobs' % self.VERSION, jobs.Handler),
